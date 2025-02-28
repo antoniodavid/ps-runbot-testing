@@ -72,5 +72,3 @@
         <menuitem parent="base.next_id_9" id="runbot_record_all_menu" action="runbot_record_all_act" />
     </data>
 </odoo>
-
-

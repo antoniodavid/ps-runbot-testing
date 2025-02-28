@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "Runbot record testing",
     'description': """
@@ -18,12 +17,14 @@
         'views/record.xml',
         'wizards/test_start.xml',
         'wizards/caught_error.xml',
-        'templates/templates.xml',
     ],
-    'demo': [
-    ],
-    'qweb': [
-        'static/src/xml/template.xml'
-    ],
-    'auto_install' : False,
+    'assets': {
+        'web.assets_qweb': [
+            'runbot_testing_recording/static/src/xml/template.xml',
+        ],
+        'web.assets_backend': [
+            'runbot_testing_recording/static/src/js/debug.js',
+        ],
+    },
+    'auto_install': False,
 }
